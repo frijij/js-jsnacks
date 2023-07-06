@@ -22,7 +22,6 @@ let arrayNumeri = [];
 // chiedere in un prompt di inserire tanti numeri quanti ne ha scelti l'utente
 // - creare ciclo for con i < di quantiNumeri
 for (i = 1; i <= quantiNumeri; i++) {
-
     let numeroScelto = parseInt(prompt("Inserisci un numero: "));
     console.log(numeroScelto);
     // - inserire i numeri in un array
@@ -30,26 +29,18 @@ for (i = 1; i <= quantiNumeri; i++) {
     console.log(arrayNumeri);
 }
 
+
 //Creare funzione sommaNumeri con argomento array
-// - Inserire array vuoto
 // - definire somma di n numeri dentro l'array e restituirla come risultato
+function sommaNumeri(array, numero) {
+    for (i=1; i<= array.lenght; i++) {
+        let risultato = risultato += numero;
+    }
+return risultato
+} 
 
 //Stamapare il risultato in console
 
-/*function searchInArray(array, elementToSearch) {
-
-    // PASSO 2: Scansiono tutta la lista degli invitati
-    for (let i = 0; i < array.length; i++) {
-        // Ad ogni giro se il nome inserito è identico a quello scansionato allora dico
-        // che puoi entrare
-        if (elementToSearch == array[i]) {
-            return true;
-        }
-    }
-
-    return false;
-}
-*/
 
 
 // Milestone 2
