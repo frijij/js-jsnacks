@@ -17,7 +17,7 @@ Potete ad esempio provare ad usare questo programma per inserire N voti di scuol
 // Milestone 1
 //chiedere all'utente quanti numeri vuole inserire = prompt quantiNumeri
 let quantiNumeri = parseInt(prompt("Quanti numeri vuoi inserire?"));
-let arrayNumeri = [];
+const arrayNumeri = [];
 
 // chiedere in un prompt di inserire tanti numeri quanti ne ha scelti l'utente
 // - creare ciclo for con i < di quantiNumeri
@@ -30,8 +30,10 @@ for (i = 1; i <= quantiNumeri; i++) {
 }
 
 
-//invoco la funzione sommaNumeri
+//Stamapare il risultato in console
 let sommaArray = sommaNumeri(arrayNumeri);
+console.log(sommaArray);
+
 
 
 //Creare funzione sommaNumeri con argomento array
@@ -39,7 +41,7 @@ let sommaArray = sommaNumeri(arrayNumeri);
 function sommaNumeri(array) {
     // dichiaro la variabile risutato 
     let risultato = 0
-    for (i = 1; i <= array.lenght; i+=1) {
+    for (i = 0; i < array.length; i++) {
         risultato += array[i];
     }
     console.log(risultato);
@@ -47,9 +49,8 @@ function sommaNumeri(array) {
 }
 
 
-//Stamapare il risultato in console
-
-
-
 // Milestone 2
+
+
+
 
