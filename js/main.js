@@ -16,18 +16,40 @@ Potete ad esempio provare ad usare questo programma per inserire N voti di scuol
 
 // Milestone 1
 //chiedere all'utente quanti numeri vuole inserire = prompt quantiNumeri
+let quantiNumeri = parseInt(prompt("Quanti numeri vuoi inserire?"));
+let arrayNumeri = [];
 
 // chiedere in un prompt di inserire tanti numeri quanti ne ha scelti l'utente
 // - creare ciclo for con i < di quantiNumeri
-// - inserire i numeri in un array
+for (i = 1; i <= quantiNumeri; i++) {
 
-//Creare funzione sommaNumeri con argomento numbersArray
+    let numeroScelto = parseInt(prompt("Inserisci un numero: "));
+    console.log(numeroScelto);
+    // - inserire i numeri in un array
+    arrayNumeri.push(numeroScelto);
+    console.log(arrayNumeri);
+}
+
+//Creare funzione sommaNumeri con argomento array
 // - Inserire array vuoto
 // - definire somma di n numeri dentro l'array e restituirla come risultato
 
 //Stamapare il risultato in console
 
+/*function searchInArray(array, elementToSearch) {
 
+    // PASSO 2: Scansiono tutta la lista degli invitati
+    for (let i = 0; i < array.length; i++) {
+        // Ad ogni giro se il nome inserito è identico a quello scansionato allora dico
+        // che puoi entrare
+        if (elementToSearch == array[i]) {
+            return true;
+        }
+    }
+
+    return false;
+}
+*/
 
 
 // Milestone 2
