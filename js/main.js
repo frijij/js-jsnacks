@@ -29,17 +29,20 @@ for (i = 1; i <= quantiNumeri; i++) {
     console.log(arrayNumeri);
 }
 
+//Creare funzione sommaNumeri con argomento array - FATTO SOTTO
+// - definire somma di n numeri dentro l'array e restituirla come risultato - FATTO SOTTO
 
 //Stamapare il risultato in console
 let sommaArray = sommaNumeri(arrayNumeri);
 console.log(sommaArray);
 
+// Milestone 2
+// calcolo della media aritmetica dei numeri all'interno dell'array
+let mediaArray = mediaAritmetica(arrayNumeri);
+console.log(mediaArray);
 
-
-//Creare funzione sommaNumeri con argomento array
-// - definire somma di n numeri dentro l'array e restituirla come risultato
+//--------------------------------FUNZIONI--------------------------------
 function sommaNumeri(array) {
-    // dichiaro la variabile risutato 
     let risultato = 0
     for (i = 0; i < array.length; i++) {
         risultato += array[i];
@@ -48,9 +51,18 @@ function sommaNumeri(array) {
     return risultato;
 }
 
-
-// Milestone 2
-
-
+function mediaAritmetica(array) {
+    function sommaNumeri(array) {
+        // dichiaro la variabile risutato 
+        let risultato = 0
+        for (i = 0; i < array.length; i++) {
+            risultato += array[i];
+        }
+        console.log(risultato);
+        return risultato;
+    }
+let media = sommaNumeri(array) / array.length;
+    return media;
+}
 
 
