@@ -29,15 +29,22 @@ for (i = 1; i <= quantiNumeri; i++) {
     console.log(arrayNumeri);
 }
 
+// dichiaro la variabile risutato 
+let risultato = 0
+//invoco la funzione sommaNumeri
+let sommaArray = sommaNumeri(arrayNumeri, arrayNumeri[i]);
+
 
 //Creare funzione sommaNumeri con argomento array
 // - definire somma di n numeri dentro l'array e restituirla come risultato
 function sommaNumeri(array, numero) {
     for (i=1; i<= array.lenght; i++) {
-        let risultato = risultato += numero;
+    risultato = risultato + numero;
     }
-return risultato
+return risultato;
 } 
+
+console.log(risultato);
 
 //Stamapare il risultato in console
 
