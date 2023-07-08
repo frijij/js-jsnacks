@@ -15,53 +15,36 @@ Potete ad esempio provare ad usare questo programma per inserire N voti di scuol
 */
 
 // Milestone 1
-//chiedere all'utente quanti numeri vuole inserire = prompt quantiNumeri
 let quantiNumeri = parseInt(prompt("Quanti numeri vuoi inserire?"));
 const arrayNumeri = [];
 
-// chiedere in un prompt di inserire tanti numeri quanti ne ha scelti l'utente
-// - creare ciclo for con i < di quantiNumeri
-for (i = 1; i <= quantiNumeri; i++) {
-    let numeroScelto = parseInt(prompt("Inserisci un numero: "));
-    console.log(numeroScelto);
-    // - inserire i numeri in un array
-    arrayNumeri.push(numeroScelto);
-    console.log(arrayNumeri);
-}
+    for (i = 1; i <= quantiNumeri; i++) {
+        let numeroScelto = parseInt(prompt("Inserisci un numero: "));
+        console.log(numeroScelto);
+        arrayNumeri.push(numeroScelto);
+    }
 
-//Creare funzione sommaNumeri con argomento array - FATTO SOTTO
-// - definire somma di n numeri dentro l'array e restituirla come risultato - FATTO SOTTO
-
-//Stamapare il risultato in console
+console.log("Ecco i tuoi numeri: " + arrayNumeri);
+console.log("Hai scelto " + arrayNumeri.length + "numeri")
 let sommaArray = sommaNumeri(arrayNumeri);
-console.log(sommaArray);
+console.log("La somma dei tuoi numeri è: " + sommaArray);
 
 // Milestone 2
 // calcolo della media aritmetica dei numeri all'interno dell'array
 let mediaArray = mediaAritmetica(arrayNumeri);
-console.log(mediaArray);
+console.log("La media dei tuoi numeri è: " + mediaArray);
 
 //--------------------------------FUNZIONI--------------------------------
 function sommaNumeri(array) {
-    let risultato = 0
+    let risultato = 0 
     for (i = 0; i < array.length; i++) {
         risultato += array[i];
     }
-    console.log(risultato);
     return risultato;
 }
 
 function mediaAritmetica(array) {
-    function sommaNumeri(array) {
-        // dichiaro la variabile risutato 
-        let risultato = 0
-        for (i = 0; i < array.length; i++) {
-            risultato += array[i];
-        }
-        console.log(risultato);
-        return risultato;
-    }
-let media = sommaNumeri(array) / array.length;
+    let media = sommaNumeri(array) / array.length;
     return media;
 }
 
